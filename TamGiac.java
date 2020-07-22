@@ -26,6 +26,15 @@ public class TamGiac extends DaGiac{
             return false;
         }
     }
+    public static double dienTich(){
+        double p=(a+b+c)/2;
+        double s=Math.sqrt(p*(p-a)*( p-b)*( p-c));
+        if(kiemTra()==true){
+            return s;
+        }else{
+        return -1; 
+        }
+    }
     
     public static double dienTich(){
         double p=(a+b+c)/2;
